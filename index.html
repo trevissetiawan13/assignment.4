@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Profile</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="profile-image text-center">
+          <div class="dev-icon">
+            <span>{dev}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <div class="profile-info">
+          <h2 id="profile-name">Nama Anda</h2>
+          <p id="profile-role">Front End Designer</p>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Availability: <span id="profile-availability"></span></li>
+            <li class="list-group-item">Usia: <span id="profile-age"></span></li>
+            <li class="list-group-item">Lokasi: <span id="profile-location"></span></li>
+            <li class="list-group-item">Pengalaman: <span id="profile-yoe"></span> tahun</li>
+            <li class="list-group-item">Email: <span id="profile-email"></span></li>
+          </ul>
+          <button id="edit-button" class="btn btn-primary mt-2">Edit</button>
+          <button id="delete-button" class="btn btn-danger mt-2">Delete</button>
+          <a href="#" id="resume-button" class="btn btn-success mt-2">Resume</a>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row mt-4" style="display:none;">
+      <div class="col-md-12">
+        <div class="form-container">
+          <form id="profile-form">
+            <div class="form-group">
+              <label for="name">Nama:</label>
+              <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div class="form-group">
+              <label for="role">Role:</label>
+              <input type="text" class="form-control" id="role" name="role">
+            </div>
+            <div class="form-group">
+              <label for="availability">Availability:</label>
+              <select class="form-control" id="availability" name="availability">
+                <option value="Full Time">Full Time</option>
+                <option value="Part Time">Part Time</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="age">Usia:</label>
+              <input type="number" class="form-control" id="age" name="age">
+            </div>
+            <div class="form-group">
+              <label for="location">Lokasi:</label>
+              <input type="text" class="form-control" id="location" name="location">
+            </div>
+            <div class="form-group">
+              <label for="yoe">Years Experience:</label>
+              <input type="number" class="form-control" id="yoe" name="yoe">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <button type="submit" class="btn btn-success">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script> </body>
+</html>
